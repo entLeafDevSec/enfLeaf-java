@@ -17,4 +17,4 @@ jobs:
       run:  mvn -B verify sonar:sonar -Dsonar.projectKey=entleaf-org_entleaf-demo -Dsonar.organization=entLeaf-org -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONARCLOUD_TOKEN
       env:
         GIT_HUB_TOKEN: ${{ secrets.GIT_HUB_TOKEN }}
-        SONARCLOUD_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
+        SONARCLOUD_TOKEN: ${{ secrets.SONAR_TOKEN }}
